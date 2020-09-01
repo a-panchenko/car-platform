@@ -11,12 +11,12 @@ class CarAttributes:
         self.color = color
 
 class CarListing:
-    def __init__(self, id, date, author_id, author_phone, state, CarAttributes(), price_true, price_predicted):
+    def __init__(self, id, date, author_id, author_phone, state, car_attributes, price_true, price_predicted):
         self.id = id
         self.date = date
         self.author_id = author_id
         self.author_phone = author_phone
         self.state = state
-        self.car_attributes = CarAttributes()
+        self.car_attributes = car_attributes
         self.price_true = price_true
         self.price_predicted = price_predicted
