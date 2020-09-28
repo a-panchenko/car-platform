@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import request
 from flask_api import status
-import web_platform.models as models
+import webapp_platform.models as models
 import inflection
 
 app = Flask(__name__)
@@ -11,7 +11,7 @@ def pong():
     return 'pong'
 
 @app.route('/car-listings', methods=['POST'])
-def upload_car_listing():
+def car_listing():
     # get JSON data from the output
     req_data = request.get_json()
 
@@ -26,9 +26,10 @@ def upload_car_listing():
                                         req_data['state'], car_attributes.__dict__, req_data['customer_price'], req_data['price_predicted'])
 
         print(car_listing.__dict__)
+        return 'OK'
 
     except KeyError:
-        return "Record not found", status.HTTP_400_BAD_REQUEST
+        return "Invalid JSON structure", status.HTTP_400_BAD_REQUEST
 
 if __name__ == '__main__':
     app.run(debug=True)
