@@ -10,7 +10,7 @@ app = Flask(__name__)
 def pong():
     return 'pong'
 
-@app.route('/car-listing', methods=['POST'])
+@app.route('/car-listings', methods=['POST'])
 def upload_car_listing():
     # get JSON data from the output
     req_data = request.get_json()
