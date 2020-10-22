@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "car-platform-273211",
+  "private_key_id": "beffc197afb65739a54031a323ed9c7aed51d470",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDQ40KZmK+r8TWO\nyv0/DmrneZWULD/cSBfL2s5SdTDhRsBQ04iRFusHmmhDH7svY3dbn1BjBDEVynAv\ne9SShs1KhggwPGqKVsZ9PSVni5jq06jR7YYK+GzPZSGbueC4ChkFJK3ZoFmCqeo4\nduKh/D8PidqQnPYo85xazXKoXJmg0fZjtkRxNtUAUtOZZYIzYzwL+ZFYgFp12VSI\niES89sdJVAu56rTtizJ/O5gvHeb0lb33CrjB9Rkkg0vpiE9I/rnz9pKmeeTWfNnN\nsc3hUrcMQYkAZKVo9qp2SrwHcuTz4LFbupdfcb/NcEhp2K0HiIBfZebcnqfqaVST\nGXZbXn5lAgMBAAECggEAMqxCwoR37y/dRHXJL/QFKoCD8PU4C63Aeg8rGHU95ZRW\ngHUETuAepVJHgysOK12HfaY857xDVQwuIVK6m04QvIidsWfil4sb7RM5gPAsKSEt\n9bkXWI9xw/D+UWrq0PKAJc+DTgUYWbpy634plc6dlJ0mNIkjLQWF00A+FYobKZf9\nKCodturg928hRhVwvkZ63y9H96+3uwmSKyWM20EaV/TLOCIholK2T7jPV+BH09xl\neBkiqoGOpgYZfTGJPGcLcaEod6BWtssa8zBUR4cnkWvvhd0io9LQ6DCAd0CS6CIF\nEL78AIUVWdzh1diEX9xcRIA6NLxKCbx8JvwZs6DXQQKBgQD3ZHhKFunvKZVKLJtm\nRoaWLeW5ahsUCk6SuHKpjG9C0waOABY4qbFhKmiURKYf/oOPWDKstct+xeTmcORE\nXqW9NYZ7aKgeZxYrO2ubj52K+lEZLgSPX65lGlbpIH0VnjQFSBPpWPxyQBykEDL+\nY/MCvEmhAIfFZq1kBoGhmxiuJQKBgQDYJ9Ps6iyAa74Ngm+LPd+e1xUkLC+Cr/Cu\nlUNI3oMvLs9Sa28RdFuXxC2w3mjCKAmFkcuXdK8CR/d6imGW035oX6Ihp7hR3yy/\n5qBMTX1skSf6mXqeZm1nREiLS3RjaLVuxlCCAE5DxlVhw1mJ1sQDN4Onr7oz+vGh\ngMQNpSz7QQKBgGdExEXBLOPNyujMmA3ocLPt8tAkL6t85fGvFwYZfjQ53KmX9a6v\nf0DdMAx8X5BJcOd8XKLlvE1uFC/xfgfgLnU+C6YmOM+AHqvrQO8N0yi5dvL416R1\nv1mq1g64ph5JDNQLk2w73h1fD9WYgYDZfg5tRJr1mrdXNhfj82bfVD0VAoGAMXhU\nCVnC25VNBtx+WNjNUBYbkY7HRNqtc9dXcdrzHR5SdqN95PnDaKWOa3dLdHwjSb2H\nYd9jmlsMKbB4C0PWH18bxSYUijBQlo7ayvvFI87I3pK3vH7mtQasr6ySM5ooQ/UB\nQe99+gbvTZOe72wGqlHPQNZ4ACODn5nPxOuzssECgYAFf8bbCWS8pfjkZ8dEC5Z+\nJe4aJnqEr3A0ETEJ9MRcZ9yMnE4E003jwlOAIZ2Ta+ERQYWX8Wrd3bH5BXiBy4nx\nfPss+isngEmeM2m/uGWXDHAbiprKZ+wBn4DlK+PVfk+HCHJSEgHI7DTFNqL8KtQF\n5ht+kY8fAKH1PGKgjp8Hfg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "car-platform-273211@appspot.gserviceaccount.com",
+  "client_id": "115411297985326842847",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/car-platform-273211%40appspot.gserviceaccount.com"
+}
