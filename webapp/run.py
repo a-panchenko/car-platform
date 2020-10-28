@@ -28,7 +28,7 @@ def upload_car_listing():
     try:
         #load function returns dictionary
         car_listing = CarListingSchema().load(req_data)
-        print(car_listing.__dict__)
+        # print(car_listing.__dict__)
         prediction = __predictor.predict(car_listing)
         return prediction, status.HTTP_200_OK
     except ValidationError as err:
