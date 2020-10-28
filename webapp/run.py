@@ -2,11 +2,14 @@ from flask import Flask
 from flask import request
 from flask_api import status
 from webapp_platform.models import CarListingSchema, CarListing
+from webapp_platform.services import PricePredictor
 import inflection
 from marshmallow import ValidationError
 from pprint import pprint
 
 app = Flask(__name__)
+
+__predictor = PricePredictor()
 
 @app.route('/ping')
 def pong():
@@ -25,8 +28,9 @@ def upload_car_listing():
     try:
         #load function returns dictionary
         car_listing = CarListingSchema().load(req_data)
-        print(car_listing.__dict__)
-        return 'OK', status.HTTP_200_OK
+        # print(car_listing.__dict__)
+        prediction = __predictor.predict(car_listing)
+        return prediction, status.HTTP_200_OK
     except ValidationError as err:
         pprint(err.messages)
         return err.messages, status.HTTP_400_BAD_REQUEST

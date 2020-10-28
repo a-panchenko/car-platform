@@ -1,6 +1,6 @@
 from enum import Enum
 from marshmallow import Schema, fields, validate, post_load
-from ..webapp_platform.validation_functions import date_validation
+from webapp_platform.validation_functions import date_validation
 import datetime
 
 class CarAttributes:
@@ -52,14 +52,13 @@ class Fuel(Enum):
 class Transmission(Enum):
     automatic = 'automatic'
     manual = 'manual'
-    cvt = 'cvt'
-    semi_automatic = 'semi-automatic'
+    other = 'other'
 
 class Type(Enum):
     hatchback = 'hatchback'
-    sport_car = 'sport car'
+    pickup = 'pickup'
     sedan = 'sedan'
-    limousine = 'limousine'
+    wagon = 'wagon'
     van = 'van'
     truck = 'truck'
 
@@ -67,21 +66,24 @@ class Color(Enum):
     black = 'black'
     blue = 'blue'
     brown = 'brown'
-    gold = 'gold'
     gray = 'gray'
     green = 'green'
     orange = 'orange'
     purple = 'purple'
     red = 'red'
     silver = 'silver'
-    tan = 'tan'
     white = 'white'
     yellow = 'yellow'
 
 class State(Enum):
-    usa = 'USA'
-    ukraine = 'Ukraine'
-    germany = 'Germany'
+    mn = 'mn'
+    va = 'va'
+    wi = 'wi'
+    ca = 'ca'
+    fl = 'fl'
+    tx = 'tx'
+    wa = 'wa'
+    ny = 'ny'
 
 class CarAttributesSchema(Schema):
     manufacturer_id = fields.Str(required=True)
