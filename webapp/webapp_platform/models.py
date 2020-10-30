@@ -1,6 +1,6 @@
 from enum import Enum
 from marshmallow import Schema, fields, validate, post_load
-from webapp_platform.validation_functions import date_validation
+from .validation_functions import date_validation
 import datetime
 
 class CarAttributes:
