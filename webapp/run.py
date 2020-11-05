@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import request
 from flask_api import status
-from webapp_platform.models import CarListingSchema, CarListing
+from webapp_platform.models import CarListingSchema
 from webapp_platform.services import PricePredictor
 import inflection
 from marshmallow import ValidationError

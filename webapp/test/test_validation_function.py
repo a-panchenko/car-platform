@@ -2,16 +2,15 @@ import unittest
 import datetime
 
 from marshmallow.exceptions import ValidationError
-
-from ..webapp_platform.models import CarListing, CarListingSchema, CarAttributes
+from webapp_platform.models import CarListing, CarListingSchema, CarAttributes
 
 class TestValidationFunction(unittest.TestCase):
-    expected_value = CarListing("1234", datetime.date(2019, 10, 1), "001", "0542271836", "USA",
-                                CarAttributes("345", "A8790", "gas", "automatic", "1FTFW1EF8EFA71429",
+    expected_value = CarListing("1234", datetime.date(2019, 10, 1), "001", "0542271836", "mn",
+                                CarAttributes("345", "f-150", "gas", "automatic", "1FTFW1EF8EFA71429",
                                               4000, 1990, "sedan", "gray"), 900)
 
-    def create_value(self, id = "1234", date = "2019-10-1", author_id = "001", author_phone = "0542271836", state = "USA",
-                     manufacturer_id = "345", model_id = "A8790", fuel = "gas", transmission = "automatic",
+    def create_value(self, id = "1234", date = "2019-10-1", author_id = "001", author_phone = "0542271836", state = "mn",
+                     manufacturer_id = "345", model_id = "f-150", fuel = "gas", transmission = "automatic",
                      vin = "1FTFW1EF8EFA71429", mileage =  4000, year = 1990, type = "sedan", color = "gray",
                      customer_price = 900):
         list_keys = ['id', 'date', 'author_id', 'author_phone', 'state', 'car_attributes', 'customer_price']
